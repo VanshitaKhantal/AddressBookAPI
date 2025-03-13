@@ -535,6 +535,7 @@
       },
       "BusinessLayer/1.0.0": {
         "dependencies": {
+          "ModelLayer": "1.0.0",
           "RepositoryLayer": "1.0.0"
         },
         "runtime": {
@@ -544,11 +545,20 @@
           }
         }
       },
+      "ModelLayer/1.0.0": {
+        "runtime": {
+          "ModelLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "RepositoryLayer/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.36",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
+          "ModelLayer": "1.0.0"
         },
         "runtime": {
           "RepositoryLayer.dll": {
@@ -902,6 +912,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "BusinessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ModelLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

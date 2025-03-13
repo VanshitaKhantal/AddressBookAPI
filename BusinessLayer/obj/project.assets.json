@@ -731,13 +731,24 @@
           }
         }
       },
+      "ModelLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ModelLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModelLayer.dll": {}
+        }
+      },
       "RepositoryLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.36",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
+          "ModelLayer": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RepositoryLayer.dll": {}
@@ -1947,6 +1958,11 @@
         "version.txt"
       ]
     },
+    "ModelLayer/1.0.0": {
+      "type": "project",
+      "path": "../ModelLayer/ModelLayer.csproj",
+      "msbuildProject": "../ModelLayer/ModelLayer.csproj"
+    },
     "RepositoryLayer/1.0.0": {
       "type": "project",
       "path": "../RepositoryLayer/RepositoryLayer.csproj",
@@ -1955,6 +1971,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ModelLayer >= 1.0.0",
       "RepositoryLayer >= 1.0.0"
     ]
   },
@@ -1965,11 +1982,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\khant\\OneDrive\\Desktop\\Task\\AddressBook\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\khant\\OneDrive\\Desktop\\Project\\AddressBookAPI\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\khant\\OneDrive\\Desktop\\Task\\AddressBook\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\khant\\OneDrive\\Desktop\\Project\\AddressBookAPI\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\khant\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\khant\\OneDrive\\Desktop\\Task\\AddressBook\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\khant\\OneDrive\\Desktop\\Project\\AddressBookAPI\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1990,8 +2007,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\khant\\OneDrive\\Desktop\\Task\\AddressBook\\RepositoryLayer\\RepositoryLayer.csproj": {
-              "projectPath": "C:\\Users\\khant\\OneDrive\\Desktop\\Task\\AddressBook\\RepositoryLayer\\RepositoryLayer.csproj"
+            "C:\\Users\\khant\\OneDrive\\Desktop\\Project\\AddressBookAPI\\ModelLayer\\ModelLayer.csproj": {
+              "projectPath": "C:\\Users\\khant\\OneDrive\\Desktop\\Project\\AddressBookAPI\\ModelLayer\\ModelLayer.csproj"
+            },
+            "C:\\Users\\khant\\OneDrive\\Desktop\\Project\\AddressBookAPI\\RepositoryLayer\\RepositoryLayer.csproj": {
+              "projectPath": "C:\\Users\\khant\\OneDrive\\Desktop\\Project\\AddressBookAPI\\RepositoryLayer\\RepositoryLayer.csproj"
             }
           }
         }
