@@ -169,3 +169,8 @@ C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\obj\Debug\net
 C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\obj\Debug\net6.0\AddressB.06280804.Up2Date
 C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\obj\Debug\net6.0\AddressBook.genruntimeconfig.cache
 C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\obj\Debug\net6.0\ref\AddressBook.dll
+C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
