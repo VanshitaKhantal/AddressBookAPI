@@ -27,7 +27,7 @@ builder.Services.AddDbContext<AddressBookDbContext>(options =>
 builder.Services.AddControllers();
 // Dependency Injection
 builder.Services.AddSingleton<IAddressBookRL, AddressBookRL>();
-builder.Services.AddSingleton<IAddressBookBL, AddressBookBL>();
+builder.Services.AddSingleton<IAddressBookService, AddressBookService>();
 
 // Register AutoMapper
 builder.Services.AddAutoMapper(typeof(AddressBookMappingProfile));

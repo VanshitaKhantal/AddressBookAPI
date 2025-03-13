@@ -9,7 +9,7 @@ namespace BusinessLayer.Service
     /// Business Logic Layer for Address Book operations.
     /// Acts as an intermediary between the Controller and Repository layers.
     /// </summary>
-    public class AddressBookBL : IAddressBookBL
+    public class AddressBookService : IAddressBookService
     {
         /// <summary>
         /// Repository layer dependency for accessing data operations.
@@ -20,7 +20,7 @@ namespace BusinessLayer.Service
         /// Initializes a new instance of the AddressBookBL class.
         /// </summary>
         /// <param name="addressBookRepository">Repository layer dependency.</param>
-        public AddressBookBL(IAddressBookRL addressBookRepository)
+        public AddressBookService(IAddressBookRL addressBookRepository)
         {
             _addressBookRepository = addressBookRepository;
         }

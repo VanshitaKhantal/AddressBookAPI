@@ -14,13 +14,13 @@ namespace WebAPI.Controllers
     [Route("api/addressbook")]
     public class AddressBookController : ControllerBase
     {
-        private readonly IAddressBookBL _addressBookService;
+        private readonly IAddressBookService _addressBookService;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AddressBookController"/> class.
         /// </summary>
         /// <param name="addressBookService">Business layer service for address book operations.</param>
-        public AddressBookController(IAddressBookBL addressBookService)
+        public AddressBookController(IAddressBookService addressBookService)
         {
             _addressBookService = addressBookService;
         }

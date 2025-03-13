@@ -7,7 +7,7 @@ namespace BusinessLayer.Interface
     /// Interface for Address Book Business Layer.
     /// Defines CRUD operations for managing address book contacts.
     /// </summary>
-    public interface IAddressBookBL
+    public interface IAddressBookService
     {
         IEnumerable<AddressBookEntry> GetAllContacts();
         AddressBookEntry GetContactById(int id);
