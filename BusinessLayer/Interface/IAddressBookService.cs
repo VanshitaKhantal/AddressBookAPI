@@ -17,5 +17,10 @@ namespace BusinessLayer.Interface
         bool DeleteContact(int id);
         string Register(UserDTO userDto);
         string Login(string email, string password);
+<<<<<<< HEAD
+=======
+        void ForgotPassword(string email);
+        void ResetPassword(string token, string newPassword);
+>>>>>>> feature-password-reset
     }
 }

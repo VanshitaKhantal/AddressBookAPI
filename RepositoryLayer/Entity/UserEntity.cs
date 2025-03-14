@@ -23,5 +23,10 @@ namespace RepositoryLayer.Entity
 
         [Required]
         public string PasswordHash { get; set; }
+<<<<<<< HEAD
+=======
+        public string? ResetToken { get; internal set; }
+        public DateTime? ResetTokenExpiry { get; internal set; }
+>>>>>>> feature-password-reset
     }
 }

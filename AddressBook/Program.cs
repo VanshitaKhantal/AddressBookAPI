@@ -10,11 +10,19 @@ using RepositoryLayer.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+<<<<<<< HEAD
+=======
+using ModelLayer.Models;
+>>>>>>> feature-password-reset
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("Jwt"));
+<<<<<<< HEAD
+=======
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+>>>>>>> feature-password-reset
 
 // ? Ensure Configuration is Correct
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -35,6 +43,13 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IAddressBookRL, AddressBookRL>();
 builder.Services.AddScoped<IAddressBookService, AddressBookService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
+<<<<<<< HEAD
+=======
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+// Configure SMTP settings from appsettings.json
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+>>>>>>> feature-password-reset
 
 // Register AutoMapper
 builder.Services.AddAutoMapper(typeof(AddressBookMappingProfile));

@@ -5,6 +5,12 @@ using System.Collections.Generic;
 using ModelLayer.DTO;
 using RepositoryLayer.Entity;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
+=======
+using RepositoryLayer;
+using System.Security.Cryptography;
+using System.Text;
+>>>>>>> feature-password-reset
 
 namespace BusinessLayer.Service
 {
@@ -19,15 +25,27 @@ namespace BusinessLayer.Service
         /// </summary>
         private readonly IAddressBookRL _addressBookRepository;
         private readonly IJwtService _jwtService;
+<<<<<<< HEAD
+=======
+        private readonly IEmailService _emailService;
+>>>>>>> feature-password-reset
 
         /// <summary>
         /// Initializes a new instance of the AddressBookBL class.
         /// </summary>
         /// <param name="addressBookRepository">Repository layer dependency.</param>
+<<<<<<< HEAD
         public AddressBookService(IAddressBookRL addressBookRepository, IJwtService jwtService)
         {
             _addressBookRepository = addressBookRepository;
             _jwtService = jwtService;
+=======
+        public AddressBookService(IAddressBookRL addressBookRepository, IJwtService jwtService, IEmailService emailService)
+        {
+            _addressBookRepository = addressBookRepository;
+            _jwtService = jwtService;
+            _emailService = emailService;
+>>>>>>> feature-password-reset
         }
 
         /// <summary>
@@ -56,6 +74,35 @@ namespace BusinessLayer.Service
                 return "Invalid credentials";
 
             return _jwtService.GenerateToken(user);
+<<<<<<< HEAD
+=======
+        }
+
+        /// <summary>
+        /// Handles user password reset functionality.
+        /// </summary>
+        public void ForgotPassword(string email)
+        {
+            var user = _addressBookRepository.GetUserByEmail(email);
+            if (user == null) throw new Exception("User not found");
+
+            var token = Guid.NewGuid().ToString();
+            _addressBookRepository.SaveResetToken(user.Id, token);
+            _emailService.SendPasswordResetEmail(email, token);
+        }
+
+        /// <summary>
+        /// Resets the user's password after verifying the reset token.
+        /// </summary>
+        /// <param name="token">The reset token received via email.</param>
+        /// <param name="newPassword">The new password to set.</param>
+        public void ResetPassword(string token, string newPassword)
+        {
+            var userId = _addressBookRepository.GetUserIdByResetToken(token);
+            if (userId == null) throw new Exception("Invalid token");
+
+            _addressBookRepository.UpdatePassword(userId, newPassword);
+>>>>>>> feature-password-reset
         }
 
         /// <summary>

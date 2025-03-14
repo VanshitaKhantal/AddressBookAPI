@@ -80,6 +80,25 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.AddressBookController",
+<<<<<<< HEAD
+=======
+    "Method": "ForgotPassword",
+    "RelativePath": "api/addressbook/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ModelLayer.DTO.ForgotPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.AddressBookController",
+>>>>>>> feature-password-reset
     "Method": "Login",
     "RelativePath": "api/addressbook/login",
     "HttpMethod": "POST",
@@ -119,5 +138,24 @@
       }
     ],
     "ReturnTypes": []
+<<<<<<< HEAD
+=======
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.AddressBookController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/addressbook/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ModelLayer.DTO.ResetPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+>>>>>>> feature-password-reset
   }
 ]
