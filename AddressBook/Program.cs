@@ -7,8 +7,14 @@ using Microsoft.EntityFrameworkCore;
 using RepositoryLayer;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("Jwt"));
 
 // ? Ensure Configuration is Correct
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -26,14 +32,39 @@ builder.Services.AddDbContext<AddressBookDbContext>(options =>
 
 builder.Services.AddControllers();
 // Dependency Injection
-builder.Services.AddSingleton<IAddressBookRL, AddressBookRL>();
-builder.Services.AddSingleton<IAddressBookService, AddressBookService>();
+builder.Services.AddScoped<IAddressBookRL, AddressBookRL>();
+builder.Services.AddScoped<IAddressBookService, AddressBookService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 // Register AutoMapper
 builder.Services.AddAutoMapper(typeof(AddressBookMappingProfile));
 
 // Register FluentValidation
 builder.Services.AddValidatorsFromAssemblyContaining<AddressBookEntryValidator>();
+
+// JWT Authentication Configuration
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ClockSkew = TimeSpan.Zero // Token expiry time exact rakhta hai
+    };
+});
+
+builder.Services.AddAuthorization(); // Authorization Enable karo
 
 var app = builder.Build();
 

@@ -2,6 +2,9 @@
 using RepositoryLayer.Interface;
 using BusinessLayer.Interface;
 using System.Collections.Generic;
+using ModelLayer.DTO;
+using RepositoryLayer.Entity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BusinessLayer.Service
 {
@@ -15,14 +18,44 @@ namespace BusinessLayer.Service
         /// Repository layer dependency for accessing data operations.
         /// </summary>
         private readonly IAddressBookRL _addressBookRepository;
+        private readonly IJwtService _jwtService;
 
         /// <summary>
         /// Initializes a new instance of the AddressBookBL class.
         /// </summary>
         /// <param name="addressBookRepository">Repository layer dependency.</param>
-        public AddressBookService(IAddressBookRL addressBookRepository)
+        public AddressBookService(IAddressBookRL addressBookRepository, IJwtService jwtService)
         {
             _addressBookRepository = addressBookRepository;
+            _jwtService = jwtService;
+        }
+
+        /// <summary>
+        /// Registers a new user, hashes their password, and stores it in the database.
+        /// </summary>
+        public string Register(UserDTO userDto)
+        {
+            var user = new UserEntity
+            {
+                Name = userDto.Name,
+                Email = userDto.Email,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(userDto.Password)
+            };
+
+            _addressBookRepository.RegisterUser(user);
+            return "User registered successfully";
+        }
+
+        /// <summary>
+        /// Registers a new user, hashes their password, and stores it in the database.
+        /// </summary>
+        public string Login(string email, string password)
+        {
+            var user = _addressBookRepository.GetUserByEmail(email);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
+                return "Invalid credentials";
+
+            return _jwtService.GenerateToken(user);
         }
 
         /// <summary>
