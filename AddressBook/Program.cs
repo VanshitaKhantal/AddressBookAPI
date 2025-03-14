@@ -11,6 +11,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using ModelLayer.Models;
+using RabbitMQ.Client;
+using Microsoft.Extensions.Configuration;
+using BusinessLayer.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,9 +40,16 @@ if (string.IsNullOrEmpty(connectionString))
     throw new ArgumentNullException("Connection string is missing. Check appsettings.json!");
 }
 
-// ? Register DbContext with Connection String
+// Register DbContext with Connection String
 builder.Services.AddDbContext<AddressBookDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+// Start RabbitMQ Consumer
+var userConsumer = new RabbitMQConsumer("user_registered");
+var contactConsumer = new RabbitMQConsumer("contact_added");
+
+Task.Run(() => userConsumer.StartListening());
+Task.Run(() => contactConsumer.StartListening());
 
 // Add services to the container.
 
