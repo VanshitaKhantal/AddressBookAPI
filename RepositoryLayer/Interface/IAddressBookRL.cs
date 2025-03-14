@@ -15,7 +15,12 @@ namespace RepositoryLayer.Interface
         AddressBookEntry AddContact(AddressBookEntry contact);
         bool UpdateContact(int id, AddressBookEntry contact);
         bool DeleteContact(int id);
+        void UpdateUser(UserEntity user);
         UserEntity RegisterUser(UserEntity user);
+
         UserEntity GetUserByEmail(string email);
+        void SaveResetToken(int userId, string token);
+        int GetUserIdByResetToken(string token);
+        void UpdatePassword(int userId, string newPassword);
     }
 }
