@@ -27,22 +27,6 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.AddressBookController",
-    "Method": "AddContact",
-    "RelativePath": "api/addressbook",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "contact",
-        "Type": "ModelLayer.Model.AddressBookEntry",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebAPI.Controllers.AddressBookController",
     "Method": "UpdateContact",
     "RelativePath": "api/addressbook/{id}",
     "HttpMethod": "PUT",
@@ -81,7 +65,26 @@
   {
     "ContainingType": "WebAPI.Controllers.AddressBookController",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+    "Method": "AddContact",
+    "RelativePath": "api/addressbook/add-contact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ModelLayer.Model.AddressBookEntry",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.AddressBookController",
+>>>>>>> feature-rabbitmq-events
     "Method": "ForgotPassword",
     "RelativePath": "api/addressbook/forgot-password",
     "HttpMethod": "POST",
@@ -132,7 +135,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userDto",
+        "Name": "model",
         "Type": "ModelLayer.DTO.UserDTO",
         "IsRequired": true
       }
