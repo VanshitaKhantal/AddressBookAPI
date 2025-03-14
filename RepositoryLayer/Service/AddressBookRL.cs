@@ -174,5 +174,9 @@ namespace RepositoryLayer.Service
             _addressBook.Remove(contact);
             return true;
         }
+
+        private class RedisCacheService
+        {
+        }
     }
 }
