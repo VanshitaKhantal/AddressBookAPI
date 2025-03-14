@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 a408d6564b06107cf181d3a0e01f603c6e134c4207e3490573695a6f9dab8ad3
 =======
 c633889db2decbfc320d772d05d9bafdcdc62374f6b53e980e476112e4fce391
@@ -11,3 +12,6 @@ c633889db2decbfc320d772d05d9bafdcdc62374f6b53e980e476112e4fce391
 =======
 df96b91615ad7c72c831e108a0df4dfc64dc5de11cd28f7f57f73c4d3cfc61f4
 >>>>>>> feature-rabbitmq-events
+=======
+9980b97ce45dafbf343bf770bac02f535034114162ffd62dc011ea2f1e6abcb3
+>>>>>>> feature-swagger-docs

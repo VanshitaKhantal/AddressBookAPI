@@ -17,6 +17,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a76fd1148ea8af2968c57e9a6efa1c71f6ef3cc")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d94ab56d85c951316254acb390a8bdf650e39f84")]
@@ -27,6 +28,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c1980558834f2c096ab69826fc9aaae96b262f1")]
 >>>>>>> feature-rabbitmq-events
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e8ef5680547df3d09633508ac12363dc030ce31")]
+>>>>>>> feature-swagger-docs
 [assembly: System.Reflection.AssemblyProductAttribute("RepositoryLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepositoryLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
