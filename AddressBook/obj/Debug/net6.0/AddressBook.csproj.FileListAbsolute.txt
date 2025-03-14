@@ -174,3 +174,6 @@ C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net
 C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\khant\OneDrive\Desktop\Project\AddressBookAPI\AddressBook\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
