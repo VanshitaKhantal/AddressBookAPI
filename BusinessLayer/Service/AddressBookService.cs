@@ -23,6 +23,7 @@ namespace BusinessLayer.Service
         private readonly IAddressBookRL _addressBookRepository;
         private readonly IJwtService _jwtService;
         private readonly IEmailService _emailService;
+        private IAddressBookRL repository;
 
         /// <summary>
         /// Initializes a new instance of the AddressBookBL class.
@@ -33,6 +34,11 @@ namespace BusinessLayer.Service
             _addressBookRepository = addressBookRepository;
             _jwtService = jwtService;
             _emailService = emailService;
+        }
+
+        public AddressBookService(IAddressBookRL repository)
+        {
+            this.repository = repository;
         }
 
         /// <summary>
