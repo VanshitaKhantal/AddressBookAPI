@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xTQVtqmrWz8=",
+  "dgSpecHash": "tQ1/cnsz2I4=",
   "success": true,
   "projectFilePath": "C:\\Users\\khant\\OneDrive\\Desktop\\Project\\AddressBookAPI\\AddressBook\\AddressBook.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\khant\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.36\\microsoft.entityframeworkcore.abstractions.6.0.36.nupkg.sha512",
     "C:\\Users\\khant\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.36\\microsoft.entityframeworkcore.analyzers.6.0.36.nupkg.sha512",
     "C:\\Users\\khant\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.36\\microsoft.entityframeworkcore.design.6.0.36.nupkg.sha512",
+    "C:\\Users\\khant\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.32\\microsoft.entityframeworkcore.inmemory.6.0.32.nupkg.sha512",
     "C:\\Users\\khant\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.36\\microsoft.entityframeworkcore.relational.6.0.36.nupkg.sha512",
     "C:\\Users\\khant\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.36\\microsoft.entityframeworkcore.sqlserver.6.0.36.nupkg.sha512",
     "C:\\Users\\khant\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

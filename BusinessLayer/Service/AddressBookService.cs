@@ -28,7 +28,11 @@ namespace BusinessLayer.Service
 <<<<<<< HEAD
 =======
         private readonly IEmailService _emailService;
+<<<<<<< HEAD
 >>>>>>> feature-password-reset
+=======
+        private IAddressBookRL repository;
+>>>>>>> feature-nunit-tests
 
         /// <summary>
         /// Initializes a new instance of the AddressBookBL class.
@@ -46,6 +50,11 @@ namespace BusinessLayer.Service
             _jwtService = jwtService;
             _emailService = emailService;
 >>>>>>> feature-password-reset
+        }
+
+        public AddressBookService(IAddressBookRL repository)
+        {
+            this.repository = repository;
         }
 
         /// <summary>

@@ -21,7 +21,6 @@ namespace RepositoryLayer.Service
         /// Static counter to generate unique IDs for contacts.
         /// </summary>
         private static int _idCounter = 1;
-
         private readonly AddressBookDbContext _context;
 
         /// <summary>
