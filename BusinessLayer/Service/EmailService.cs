@@ -13,6 +13,10 @@ namespace BusinessLayer.Service
     {
         private readonly IConfiguration _configuration;
 
+        public EmailService()
+        {
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailService"/> class.
         /// </summary>
