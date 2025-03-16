@@ -10,6 +10,7 @@ namespace WebAPI.Controllers
     /// Generic response model for API responses.
     /// </summary>
     /// <typeparam name="T">Type of data being returned in the response.</typeparam>
+<<<<<<< HEAD
 =======
 >>>>>>> feature-addressbook-controller
 =======
@@ -18,6 +19,8 @@ namespace WebAPI.Controllers
 >>>>>>> feature-addressbook-service
 =======
 >>>>>>> feature-authentication
+=======
+>>>>>>> feature-password-reset
     public class ResponseModel<T>
     {
         public bool Success { get; set; }

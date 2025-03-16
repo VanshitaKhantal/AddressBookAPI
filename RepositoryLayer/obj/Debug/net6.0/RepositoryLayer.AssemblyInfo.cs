@@ -24,6 +24,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a76fd1148ea8af2968c57e9a6efa1c71f6ef3cc")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d94ab56d85c951316254acb390a8bdf650e39f84")]
@@ -55,6 +56,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d94ab56d85c951316254acb390a8bdf650e39f84")]
 >>>>>>> feature-authentication
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32d644a8bbd512679d5dd1cadf77a582cb01132b")]
+>>>>>>> feature-password-reset
 [assembly: System.Reflection.AssemblyProductAttribute("RepositoryLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepositoryLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
