@@ -11,6 +11,7 @@ namespace WebAPI.Controllers
     /// </summary>
     /// <typeparam name="T">Type of data being returned in the response.</typeparam>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> feature-addressbook-controller
 =======
@@ -21,6 +22,8 @@ namespace WebAPI.Controllers
 >>>>>>> feature-authentication
 =======
 >>>>>>> feature-password-reset
+=======
+>>>>>>> feature-redis-cache
     public class ResponseModel<T>
     {
         public bool Success { get; set; }

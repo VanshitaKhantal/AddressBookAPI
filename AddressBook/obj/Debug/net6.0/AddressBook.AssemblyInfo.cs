@@ -20,6 +20,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c865c14b40c3530fd3df1566046222c3ccf0d4f")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49b585d50277a7b0196b28fa31dcf51a3cc00bb8")]
@@ -39,6 +40,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32d644a8bbd512679d5dd1cadf77a582cb01132b")]
 >>>>>>> feature-password-reset
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c1980558834f2c096ab69826fc9aaae96b262f1")]
+>>>>>>> feature-redis-cache
 [assembly: System.Reflection.AssemblyProductAttribute("AddressBook")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AddressBook")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
