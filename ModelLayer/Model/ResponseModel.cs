@@ -6,7 +6,7 @@ namespace WebAPI.Controllers
     /// Generic response model for API responses.
     /// </summary>
     /// <typeparam name="T">Type of data being returned in the response.</typeparam>
-    internal class ResponseModel<T>
+    public class ResponseModel<T>
     {
         public bool Success { get; set; }
         public string Message { get; set; }
