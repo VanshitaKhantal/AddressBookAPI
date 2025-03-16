@@ -2,10 +2,13 @@
 
 namespace WebAPI.Controllers
 {
+<<<<<<< HEAD
     /// <summary>
     /// Generic response model for API responses.
     /// </summary>
     /// <typeparam name="T">Type of data being returned in the response.</typeparam>
+=======
+>>>>>>> feature-addressbook-controller
     public class ResponseModel<T>
     {
         public bool Success { get; set; }
