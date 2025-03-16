@@ -5,6 +5,7 @@ namespace WebAPI.Controllers
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /// <summary>
     /// Generic response model for API responses.
     /// </summary>
@@ -15,6 +16,8 @@ namespace WebAPI.Controllers
 >>>>>>> feature-addressbook-dto
 =======
 >>>>>>> feature-addressbook-service
+=======
+>>>>>>> feature-authentication
     public class ResponseModel<T>
     {
         public bool Success { get; set; }

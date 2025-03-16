@@ -18,6 +18,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c865c14b40c3530fd3df1566046222c3ccf0d4f")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49b585d50277a7b0196b28fa31dcf51a3cc00bb8")]
@@ -31,6 +32,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a76fd1148ea8af2968c57e9a6efa1c71f6ef3cc")]
 >>>>>>> feature-addressbook-service
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d94ab56d85c951316254acb390a8bdf650e39f84")]
+>>>>>>> feature-authentication
 [assembly: System.Reflection.AssemblyProductAttribute("BusinessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BusinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
