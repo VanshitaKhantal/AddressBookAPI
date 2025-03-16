@@ -19,6 +19,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a76fd1148ea8af2968c57e9a6efa1c71f6ef3cc")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d94ab56d85c951316254acb390a8bdf650e39f84")]
@@ -34,6 +35,9 @@ using System.Reflection;
 >>>>>>> feature-swagger-docs
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6d16e96ab601fa75d1151e0c1b788614fd31ae4")]
+>>>>>>> feature-nunit-tests
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49b585d50277a7b0196b28fa31dcf51a3cc00bb8")]
 >>>>>>> feature-nunit-tests
 [assembly: System.Reflection.AssemblyProductAttribute("RepositoryLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepositoryLayer")]

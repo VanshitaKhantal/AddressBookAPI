@@ -42,8 +42,9 @@ namespace AddressBookTests.Services
 
             var addressBookRepository = new AddressBookRL(_dbContext);
 
-            // ✅ Fix: Ensure AddressBookService is correctly initialized with JWT
-            _authService = new AddressBookService(addressBookRepository, _jwtService);
+            var emailService = new EmailService(); // Ensure EmailService has a parameterless constructor
+            _authService = new AddressBookService(addressBookRepository, _jwtService, emailService);
+
         }
 
         [TearDown]
