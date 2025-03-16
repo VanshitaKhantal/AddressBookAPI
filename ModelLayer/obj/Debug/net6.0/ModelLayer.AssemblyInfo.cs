@@ -22,6 +22,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a76fd1148ea8af2968c57e9a6efa1c71f6ef3cc")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d94ab56d85c951316254acb390a8bdf650e39f84")]
@@ -47,6 +48,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d72f75bfa5a2ce1e2bdefa9bc9f59e87c057f83a")]
 >>>>>>> feature-addressbook-dto
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a76fd1148ea8af2968c57e9a6efa1c71f6ef3cc")]
+>>>>>>> feature-addressbook-service
 [assembly: System.Reflection.AssemblyProductAttribute("ModelLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModelLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
