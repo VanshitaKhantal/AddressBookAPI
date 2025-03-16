@@ -12,6 +12,7 @@ namespace WebAPI.Controllers
     /// <typeparam name="T">Type of data being returned in the response.</typeparam>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> feature-addressbook-controller
 =======
@@ -24,6 +25,8 @@ namespace WebAPI.Controllers
 >>>>>>> feature-password-reset
 =======
 >>>>>>> feature-redis-cache
+=======
+>>>>>>> feature-rabbitmq-events
     public class ResponseModel<T>
     {
         public bool Success { get; set; }

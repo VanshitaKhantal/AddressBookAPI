@@ -21,6 +21,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c865c14b40c3530fd3df1566046222c3ccf0d4f")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49b585d50277a7b0196b28fa31dcf51a3cc00bb8")]
@@ -43,6 +44,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c1980558834f2c096ab69826fc9aaae96b262f1")]
 >>>>>>> feature-redis-cache
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e8ef5680547df3d09633508ac12363dc030ce31")]
+>>>>>>> feature-rabbitmq-events
 [assembly: System.Reflection.AssemblyProductAttribute("BusinessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BusinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

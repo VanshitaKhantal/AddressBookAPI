@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 fa67631863dcc61ca903412ef3e78791083ebac515fd90d1cda81d085d609e7b
 =======
 c78fc03b3a174b9b29daea8ec2dd8dc8db6d65da082f03f396dfd13643bcdbda
@@ -27,3 +28,6 @@ c633889db2decbfc320d772d05d9bafdcdc62374f6b53e980e476112e4fce391
 =======
 df96b91615ad7c72c831e108a0df4dfc64dc5de11cd28f7f57f73c4d3cfc61f4
 >>>>>>> feature-redis-cache
+=======
+9980b97ce45dafbf343bf770bac02f535034114162ffd62dc011ea2f1e6abcb3
+>>>>>>> feature-rabbitmq-events
